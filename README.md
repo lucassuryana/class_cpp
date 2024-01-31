@@ -7,6 +7,16 @@ In this project, I implemented a concept of class in C++.
 - Why do we need header (.h) file?
     - Some experts recommend to put the minimum number of #include into a header file, otherwise the library might be called several times that might cause error.
 - Why do we need to separate file, like main.cpp and gaussia.cpp?
+- We cannot compile C++ code if variables are declared more than once. Not only the same variable, function, class, etc works the same.
+Ex:
+```cpp
+#include <iostream>
+
+int main() {
+std::cout << "Hello, World!" << std::endl;
+return 0;
+}
+```
 
 
 ## Using a class in C++ (UsingAClassC++)
