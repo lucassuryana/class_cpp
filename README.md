@@ -77,3 +77,44 @@ std::vector<float>::size_type variablename;
 ```
 
 The size_type is an unsigned integer that define the size of the vector.
+
+## 6. Class Function Declarations (ClassFunctionDeclarations)
+### 6.1 Set and get function declaration
+Set and get function allo use to access private variables. An object cannot access private variables directly, thus, we use set and get functions. Example of declaration set and get functions:
+
+```cpp
+class Gaussian
+{
+    private:
+        ...
+
+    public:
+        ...
+
+        void setMu(float);
+        void setSigma2(float);
+
+        float getMu();
+        float getSigma2();
+
+     ....
+};
+```
+
+### 6.2 Functions for Matrix Functionality
+To define this function, we need to specify the return datatype, the function name, and the datatype for the input. For example:
+```cpp
+class Gaussian
+{
+    ....
+
+    public:
+
+       ...
+
+        // functions to evaluate 
+        float evaluate (float);
+        Gaussian multiply (Gaussian);
+        Gaussian add (Gaussian);
+};
+```
