@@ -33,6 +33,7 @@ int main()
 }
 ```
 - Matrix class has three functions that belongs to separate categories: constructor functions, set and get function, and functions for Matrix functionality.
+- Set and get function syntax are conventions rather than specific to C++ syntax. Set function typically does not return anything because its function only to change the value of variable. Thus, we use void set().
 
 ## 2. Using a class in C++ (UsingAClassC++)
 In this folder you will find two .cpp files: main.cpp and gaussian.cpp. If you open main.cpp it has three parts:
