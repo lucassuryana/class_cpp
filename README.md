@@ -79,6 +79,38 @@ std::vector<float>::size_type variablename;
 The size_type is an unsigned integer that define the size of the vector.
 
 ## 6. Class Function Declarations (ClassFunctionDeclarations)
+Three components of function declarations: constructor, set and get functions, and matrix functionality. Template as follows:
+
+```cpp
+class Matrix 
+{
+
+        private:
+
+            std::vector< std::vector<float> > grid;
+            std::vector<float>::size_type rows;
+            std::vector<float>::size_type cols;
+
+        public:
+
+            // constructor function declarations
+            Matrix ();
+            Matrix (std::vector< std::vector<float> >);
+
+            // set and get function declarations
+            void setGrid(std::vector< std::vector<float> >);
+
+            std::vector< std::vector<float> > getGrid();
+            std::vector<float>::size_type getRows();
+            std::vector<float>::size_type getCols();
+
+            // matrix function declarations
+            std::vector< std::vector<float> > matrix_transpose();
+            std::vector< std::vector<float> > matrix_addition(Matrix);
+            void matrix_print();  
+};
+```
+
 ### 6.1 Set and get function declaration
 Set and get function allo use to access private variables. An object cannot access private variables directly, thus, we use set and get functions. Example of declaration set and get functions:
 
