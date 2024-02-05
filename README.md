@@ -49,5 +49,30 @@ We need to declare the Class to give main function access to the Gaussian class.
 ### Main funciion
 We can instantiate the object of Gaussian class inside the main function.
 
-## Inclusion_Guards_I
-The code will not work because '''#include "engine.h"''' called twice. First in '''main.cpp''' and in '''car.h'''
+## Inclusion_Guards_II
+The code will not work because '#include "engine.h' called twice. First in 'main.cpp' and in 'car.h'.
+
+## Inclusion_Guards_III
+This code provide solusion to the problem in 'Inclusion_Guards_II'. We can use '# ifndef' to avoid such situations.
+
+## Class Variables (ClassVariables)
+General syntax for declaring C++ class:
+```cpp
+class Classname
+{
+	private:
+		declare private variables;
+		declare private functions;
+
+	public:
+		declare public variables;
+		declare public functions;
+};
+```
+
+To declare variables we can use template as follows:
+```cpp
+std::vector<float>::size_type variablename;
+```
+
+The size_type is an unsigned integer that define the size of the vector.
