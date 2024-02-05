@@ -1,7 +1,7 @@
 # class_cpp
 In this project, I implemented a concept of class in C++.
 
-# Lesson learned
+# 1. Lesson learned
 - Why is it important to use private and public variable? 
 - Important of Set and Get. Both are only a function to set value and to get value.
 - Why do we need header (.h) file?
@@ -32,9 +32,9 @@ int main()
     
 }
 ```
+- Matrix class has three functions that belongs to separate categories: constructor functions, set and get function, and functions for Matrix functionality.
 
-
-## Using a class in C++ (UsingAClassC++)
+## 2. Using a class in C++ (UsingAClassC++)
 In this folder you will find two .cpp files: main.cpp and gaussian.cpp. If you open main.cpp it has three parts:
 - a header
 - a class declaration
@@ -49,13 +49,13 @@ We need to declare the Class to give main function access to the Gaussian class.
 ### Main funciion
 We can instantiate the object of Gaussian class inside the main function.
 
-## Inclusion_Guards_II
+## 3. Inclusion_Guards_II
 The code will not work because '#include "engine.h' called twice. First in 'main.cpp' and in 'car.h'.
 
-## Inclusion_Guards_III
+## 4. Inclusion_Guards_III
 This code provide solusion to the problem in 'Inclusion_Guards_II'. We can use '# ifndef' to avoid such situations.
 
-## Class Variables (ClassVariables)
+## 5. Class Variables (ClassVariables)
 General syntax for declaring C++ class:
 ```cpp
 class Classname
