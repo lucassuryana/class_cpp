@@ -41,10 +41,12 @@ std::vector<std::vector<float> > Matrix::getGrid() {
     return grid;
 }
 
+// Remember to get rows, we need to add size_type after defining the vector
 std::vector<float>::size_type Matrix::getRows() {
     return rows;
 }
 
+// Remember to get cols, we need to add size_type after defining the vector
 std::vector<float>::size_type Matrix::getCols() {
     return cols;
 }
