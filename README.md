@@ -150,3 +150,46 @@ class Gaussian
         Gaussian add (Gaussian);
 };
 ```
+
+## 7. Constructor Functions (ConstructorFunctions)
+Difference between Python constructor and C++ constructor, in Python:
+```python
+def __init__(self, variable1, variable2, ..., variablen):
+	self.variable1 = variable1
+	self.variable2 = variable2
+	self.variablen = variablen
+```
+and in C++:
+```cpp
+Classname (datatype variable1, datatype variable2, …, datatype variablen);
+```
+
+### 7.1 Defining constructor functions
+Once you declared constructor function, you need to define them in .cpp file.
+Template:
+```cpp
+// empty constructor function syntax
+Classname::ClassName() {
+
+	constructor function definition
+}
+
+// constructor function syntax
+Classname::ClassName(datatype variable1, datatype variable2, …, datatype variablen) {
+
+	constructor function definition
+
+}
+```
+For instance, the declaration of constructor function for Gaussian.
+```cpp
+Gaussian::Gaussian() {
+	mu = 0;
+	sigma2 = 1;	
+}
+
+Gaussian::Gaussian (float average, float sigma) {
+	mu = average;
+	sigma2 = sigma;
+}
+```

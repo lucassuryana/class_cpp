@@ -40,7 +40,7 @@ class Matrix
        std::vector< float >::size_type getCols();
 
 
-        /*
+        /*s
         ** TODO: Declare the matrix functions. In a following exercise, you
         ** will program matrix_transpose, matrix_addition and matrix_print
         ** functions. So you will need to declare these two functions.
